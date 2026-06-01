@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mémo Git — Commandes essentielles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ======================================================
+       HEADER
+       Modifie h1 pour changer le titre
+       Modifie p pour changer le sous-titre
+  ======================================================= -->
+  <header class="header">
+    <div class="header-icon">⚙️</div>
+    <div class="header-text">
+      <h1>Mémo Git — commandes essentielles</h1>
+      <p> Voici toutes les commandes essentielles sur Git Bash (Cette page va évoluer avec le temps)</p>
+    </div>
+  </header>
+
+
+  <!-- ======================================================
+       GRILLE DE CARTES
+       Pour ajouter une carte : copie un bloc <div class="card">
+       Pour ajouter une commande : copie un bloc <div class="cmd-row">
+  ======================================================= -->
+  <div class="grid">
+
+
+    <!-- CARTE 1 : Configuration -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon purple">⚙️</div>
+        <h2>Configuration initiale</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global user.name "Nom"</span>
+        <div class="desc">Définir ton nom d'utilisateur Git</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global user.email "email"</span>
+        <div class="desc">Définir ton email Git</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global init.defaultBranch main</span>
+        <div class="desc">Mettre "main" comme branche par défaut pour tous les futurs dépôts</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global core.autocrlf true</span>
+        <div class="desc">Supprimer les warnings LF/CRLF sur Windows</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global --add safe.directory 'chemin'</span>
+        <div class="desc">Autoriser un dossier sur clé USB ou réseau</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 2 : Créer et connecter -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon blue">🔗</div>
+        <h2>Créer et connecter un dépôt</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git init</span>
+        <div class="desc">Initialiser un nouveau dépôt Git dans le dossier courant</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git clone https://...</span>
+        <div class="desc">Télécharger un dépôt existant sur ton PC</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git remote add origin https://...</span>
+        <div class="desc">Connecter le dossier local à un dépôt distant (GitHub, Codeberg...)</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 3 : Enregistrer et envoyer -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon green">✅</div>
+        <h2>Enregistrer et envoyer</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git status</span>
+        <div class="desc">Voir l'état des fichiers (modifiés, non suivis...)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git add .</span>
+        <div class="desc">Ajouter tous les fichiers au prochain commit</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git add fichier.py</span>
+        <div class="desc">Ajouter un fichier spécifique au prochain commit</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git commit -m "message"</span>
+        <div class="desc">Sauvegarder les changements avec un message descriptif</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git push</span>
+        <div class="desc">Envoyer les commits sur GitHub / Codeberg</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git push -u origin main</span>
+        <div class="desc">Premier push : envoyer et lier la branche locale au dépôt distant</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 4 : Fichiers et dossiers -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon orange">📁</div>
+        <h2>Fichiers et dossiers</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">ls</span>
+        <div class="desc">Lister les fichiers du dossier courant</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">cd "chemin/dossier"</span>
+        <div class="desc">Se déplacer dans un dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">mkdir "nom du dossier"</span>
+        <div class="desc">Créer un nouveau dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">mkdir -p "dossier/sous-dossier"</span>
+        <div class="desc">Créer plusieurs dossiers imbriqués en une seule commande</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">mv "fichier" "destination/"</span>
+        <div class="desc">Déplacer ou renommer un fichier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">rm -r "dossier"</span>
+        <div class="desc">Supprimer un dossier et tout son contenu</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 5 : Supprimer des fichiers -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon red">🗑️</div>
+        <h2>Supprimer des fichiers du dépôt</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git rm "fichier"</span>
+        <div class="desc">Supprimer un fichier du suivi Git et du dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git ls-files dossier/</span>
+        <div class="desc">Lister les fichiers suivis par Git dans un dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git ls-files | grep '~' | xargs git rm</span>
+        <div class="desc">Supprimer automatiquement tous les fichiers temporaires Excel (~$)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">echo "~$*" >> .gitignore</span>
+        <div class="desc">Ignorer définitivement les fichiers temporaires Excel</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 6 : Branches et historique -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon purple">🕐</div>
+        <h2>Branches et historique</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git branch -M main</span>
+        <div class="desc">Renommer la branche courante en "main"</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git log</span>
+        <div class="desc">Afficher l'historique complet des commits</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git log --oneline</span>
+        <div class="desc">Historique condensé, une ligne par commit</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git log --oneline --graph</span>
+        <div class="desc">Historique avec un schéma visuel des branches</div>
+      </div>
+    </div>
+
+
+  </div><!-- fin .grid -->
+
+
+  <!-- ======================================================
+       WORKFLOW
+       Modifie les .step pour changer les étapes
+  ======================================================= -->
+  <div class="workflow">
+    <h3>🔄 Workflow classique — à répéter à chaque modification</h3>
+    <div class="workflow-steps">
+      <span class="step">git add .</span>
+      <span class="arrow">→</span>
+      <span class="step">git commit -m "..."</span>
+      <span class="arrow">→</span>
+      <span class="step">git push</span>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       FOOTER — modifie le texte ici
+  ======================================================= -->
+  <div class="footer">
+    Mémo créé le 13/04/2026 par Enzo LETHIAIS — BTS CIEL 1ère année
+  </div>
+
+</div><!-- fin .container -->
+
+</body>
+</html>
