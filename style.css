@@ -212,6 +212,79 @@ body {
   font-weight: 600;
 }
 
+/* ---- SECTION ERREURS FRÉQUENTES ------------------------- */
+.errors-section {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: var(--radius-card);
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.errors-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.errors-header h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #9a3412;
+}
+
+.errors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+/* Carte d'une erreur */
+.error-card {
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  border-radius: var(--radius-cmd);
+  padding: 0.875rem 1rem;
+}
+
+/* Message d'erreur affiché en rouge monospace */
+.error-msg {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+
+/* Explication de la cause */
+.error-cause {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Ligne de solution */
+.error-fix {
+  font-size: 0.8rem;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* Label "Solution :" en gras */
+.fix-label {
+  font-weight: 600;
+  color: #9a3412;
+  margin-right: 4px;
+}
+
 /* ---- FOOTER ---------------------------------------------- */
 .footer {
   text-align: center;
