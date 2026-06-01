@@ -292,3 +292,22 @@ body {
   font-size: 0.78rem;
   color: var(--text-muted);
 }
+
+.workflow-deploy {
+  background: var(--accent-light);
+  border-color: #93c5fd;
+  margin-top: 1rem;
+}
+
+.workflow-deploy h3 {
+  color: var(--accent-text);
+}
+
+.workflow-deploy .step {
+  color: var(--accent-text);
+  border-color: #93c5fd;
+}
+
+.workflow-deploy .arrow {
+  color: var(--accent);
+}
