@@ -58,7 +58,7 @@ body {
   gap: 1.25rem;
 }
 
-/* Icône Git dans le header — remplace le contenu par le logo voulu */
+/* Icône Git dans le header */
 .header-icon {
   width: 52px;
   height: 52px;
