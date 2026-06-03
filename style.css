@@ -1,7 +1,5 @@
 /* ============================================================
    MÉMO GIT — style.css
-   Pour modifier les couleurs, change les variables dans :root
-   Pour modifier la police, change --font-main et --font-code
    ============================================================ */
 
 /* ---- VARIABLES GLOBALES ---------------------------------- */
@@ -18,7 +16,7 @@
   --border:         #e2e8f0;       /* couleur des bordures */
   --text-main:      #1e293b;       /* texte principal */
   --text-muted:     #64748b;       /* texte secondaire */
-  --font-main:      'Segoe UI', system-ui, sans-serif;  /* police principale */
+  --font-main:      'Segoe UI', system-ui, serif;  /* police principale */
   --font-code:      'Consolas', 'Courier New', monospace; /* police des commandes */
   --radius-card:    12px;
   --radius-cmd:     6px;
@@ -84,7 +82,6 @@ body {
 }
 
 /* ---- GRILLE DE CARTES ------------------------------------ */
-/* Modifie minmax(260px, 1fr) pour changer la taille min des cartes */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -123,7 +120,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Couleurs des icônes par catégorie — modifie ici pour changer */
+/* Couleurs des icônes par catégorie — modifier ici pour changer */
 .card-icon.blue   { background: #dbeafe; }
 .card-icon.purple { background: #ede9fe; }
 .card-icon.green  { background: #dcfce7; }
@@ -251,7 +248,7 @@ body {
   padding: 0.875rem 1rem;
 }
 
-/* Message d'erreur affiché en rouge monospace */
+/* Message d'erreur affiché en rouge */
 .error-msg {
   font-family: var(--font-code);
   font-size: 0.75rem;
@@ -278,7 +275,7 @@ body {
   line-height: 1.6;
 }
 
-/* Label "Solution :" en gras */
+/* Label "Solution :"  */
 .fix-label {
   font-weight: 600;
   color: #9a3412;
