@@ -4,20 +4,20 @@
 
 /* ---- VARIABLES GLOBALES ---------------------------------- */
 :root {
-  --bg-page:        #f4f5f7;       /* couleur de fond de la page */
-  --bg-card:        #ffffff;       /* fond des cartes */
-  --bg-header:      #0f172a;       /* fond du header en haut */
-  --accent:         #3b82f6;       /* couleur principale (bleu) */
-  --accent-light:   #dbeafe;       /* fond clair pour les badges de commande */
-  --accent-text:    #1d4ed8;       /* texte des commandes */
-  --green:          #16a34a;       /* couleur section "workflow" */
+  --bg-page:        #f4f5f7;                      /* couleur de fond de la page */
+  --bg-card:        #ffffff;                      /* fond des cartes */
+  --bg-header:      #0f172a;                      /* fond du header en haut */
+  --accent:         #3b82f6;                      /* couleur principale (bleu) */
+  --accent-light:   #dbeafe;                      /* fond clair pour les badges de commande */
+  --accent-text:    #1d4ed8;                      /* texte des commandes */
+  --green:          #16a34a;                      /* couleur section "workflow" */
   --green-light:    #dcfce7;
   --green-text:     #14532d;
-  --border:         #e2e8f0;       /* couleur des bordures */
-  --text-main:      #1e293b;       /* texte principal */
-  --text-muted:     #64748b;       /* texte secondaire */
-  --font-main:      'Segoe UI', system-ui, serif;  /* police principale */
-  --font-code:      'Consolas', 'Courier New', monospace; /* police des commandes */
+  --border:         #e2e8f0;                      /* couleur des bordures */
+  --text-main:      #1e293b;                      /* texte principal */
+  --text-muted:     #64748b;                      /* texte secondaire */
+  --font-main: 'Inter', system-ui, sans-serif;      /* police principale */
+  --font-code: 'Fira Code', 'Consolas', monospace;  /* police des commandes */
   --radius-card:    12px;
   --radius-cmd:     6px;
   --shadow-card:    0 2px 8px rgba(0,0,0,0.07);
