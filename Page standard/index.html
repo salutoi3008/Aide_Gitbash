@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mémo Git — Commandes essentielles</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ======================================================
+      HEADER
+  ======================================================= -->
+  <header class="header">
+    <div class="header-icon">⚙️</div>
+    <div class="header-text">
+      <h1>Mémo Git — commandes essentielles</h1>
+      <p> Voici toutes les commandes essentielles sur Git Bash (Cette page va évoluer au fur du temps)</p>
+    </div>
+  </header>
+
+
+  <!-- ======================================================
+       GRILLE DE CARTES
+  ======================================================= -->
+  <div class="grid">
+
+
+    <!-- CARTE 1 : Configuration -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon purple">⚙️</div>
+        <h2>Configuration initiale</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global user.name "Nom"</span>
+        <div class="desc">Définir ton nom d'utilisateur Git</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global user.email "email"</span>
+        <div class="desc">Définir ton email Git</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global init.defaultBranch main</span>
+        <div class="desc">Mettre "main" comme branche par défaut pour tous les futurs dépôts</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global core.autocrlf true</span>
+        <div class="desc">Supprimer les warnings LF/CRLF sur Windows</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git config --global --add safe.directory 'chemin'</span>
+        <div class="desc">Autoriser un dossier sur clé USB ou réseau</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 2 : Créer et connecter -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon blue">🔗</div>
+        <h2>Créer et connecter un dépôt</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git init</span>
+        <div class="desc">Initialiser un nouveau dépôt Git dans le dossier courant</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git clone https://...</span>
+        <div class="desc">Télécharger un dépôt existant sur ton PC</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git remote add origin https://...</span>
+        <div class="desc">Connecter le dossier local à un dépôt distant (GitHub, Codeberg...)</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 3 : Enregistrer et envoyer -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon green">✅</div>
+        <h2>Enregistrer et envoyer</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git add .</span>
+        <div class="desc">Ajouter tous les fichiers au prochain commit</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git add fichier.py</span>
+        <div class="desc">Ajouter un fichier spécifique au prochain commit</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git commit -m "message"</span>
+        <div class="desc">Sauvegarder les changements avec un message descriptif</div>
+      </div>
+
+    <div class="cmd-row">
+      <span class="cmd"> git commit -am "message"</span>
+      <div class="desc"> Commit plus rapidement sans passer par git add</div>
+    </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git push</span>
+        <div class="desc">Envoyer les commits sur GitHub / Codeberg</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git push -u origin main</span>
+        <div class="desc">Premier push : envoyer et lier la branche locale au dépôt distant</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 4 : Fichiers et dossiers -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon orange">📁</div>
+        <h2>Fichiers et dossiers</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">ls</span>
+        <div class="desc">Lister les fichiers du dossier courant</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">cd "chemin/dossier"</span>
+        <div class="desc">Se déplacer dans un dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">mkdir "nom du dossier"</span>
+        <div class="desc">Créer un nouveau dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">mkdir -p "dossier/sous-dossier"</span>
+        <div class="desc">Créer plusieurs dossiers imbriqués en une seule commande</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">mv "fichier" "destination/"</span>
+        <div class="desc">Déplacer ou renommer un fichier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">rm -r "dossier"</span>
+        <div class="desc">Supprimer un dossier et tout son contenu</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 5 : Supprimer des fichiers -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon red">🗑️</div>
+        <h2>Supprimer des fichiers du dépôt</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git rm "fichier"</span>
+        <div class="desc">Supprimer un fichier du suivi Git et du dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git ls-files dossier/</span>
+        <div class="desc">Lister les fichiers suivis par Git dans un dossier</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git ls-files | grep '~' | xargs git rm</span>
+        <div class="desc">Supprimer automatiquement tous les fichiers temporaires Excel (~$)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">echo "~$*" >> .gitignore</span>
+        <div class="desc">Ignorer définitivement les fichiers temporaires Excel</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 6 : Branches et historique -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon purple">🕐</div>
+        <h2>Branches et historique</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git branch -M main</span>
+        <div class="desc">Renommer la branche courante en "main"</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git log</span>
+        <div class="desc">Afficher l'historique complet des commits</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git log --oneline</span>
+        <div class="desc">Historique condensé, une ligne par commit</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git log --oneline --graph</span>
+        <div class="desc">Historique avec un schéma visuel des branches</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 7 : Récupérer les mises à jour -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon blue">⬇️</div>
+        <h2>Récupérer les mises à jour</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git pull</span>
+        <div class="desc">Récupérer et fusionner les dernières modifications depuis le dépôt distant</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git fetch</span>
+        <div class="desc">Récupérer les modifications distantes sans les fusionner (pour vérifier avant)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git pull origin main</span>
+        <div class="desc">Récupérer explicitement depuis la branche "main" du dépôt distant</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 8 : Mettre de côté des changements -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon orange">📦</div>
+        <h2>Mettre de côté des changements</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git stash</span>
+        <div class="desc">Mettre temporairement de côté les modifications en cours (sans commit)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git stash pop</span>
+        <div class="desc">Récupérer les modifications mises de côté et les réappliquer</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git stash list</span>
+        <div class="desc">Afficher la liste de tous les stash enregistrés</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git stash drop</span>
+        <div class="desc">Supprimer définitivement le dernier stash sans le réappliquer</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 9 : Voir les différences -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon green">🔍</div>
+        <h2>Voir les différences</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git status</span>
+        <div class="desc">Voir l'état des fichiers (modifiés, non suivis...)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git diff</span>
+        <div class="desc">Voir les modifications non encore ajoutées avec git add</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git diff --staged</span>
+        <div class="desc">Voir les modifications déjà ajoutées (prêtes pour le commit)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git diff main..branche</span>
+        <div class="desc">Comparer deux branches entre elles</div>
+      </div>
+    </div>
+
+
+    <!-- CARTE 10 : Changer de branche -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon purple">🌿</div>
+        <h2>Changer de branche</h2>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git branch</span>
+        <div class="desc">Lister toutes les branches locales (la branche active est marquée *)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git switch nom-branche</span>
+        <div class="desc">Passer sur une branche existante (commande recommandée)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git switch -c nouvelle-branche</span>
+        <div class="desc">Créer une nouvelle branche et basculer dessus directement</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git checkout nom-branche</span>
+        <div class="desc">Ancienne façon de changer de branche (toujours fonctionnelle)</div>
+      </div>
+
+      <div class="cmd-row">
+        <span class="cmd">git merge nom-branche</span>
+        <div class="desc">Fusionner une branche dans la branche courante</div>
+      </div>
+    </div>
+  </div><!-- fin .grid -->
+
+
+  <!-- ======================================================
+       ERREURS FRÉQUENTES
+  ======================================================= -->
+  <div class="errors-section">
+    <div class="errors-header">
+      <span>⚠️</span>
+      <h3>Erreurs fréquentes et solutions</h3>
+    </div>
+
+    <div class="errors-grid">
+
+      <div class="error-card">
+        <div class="error-msg">error: failed to push some refs to '...'</div>
+        <div class="error-cause">Le dépôt distant a des commits que tu n'as pas en local.</div>
+        <div class="error-fix">
+          <span class="fix-label">Solution :</span>
+          <span class="cmd">git pull</span> puis <span class="cmd">git push</span>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-msg">Please tell me who you are (user.email / user.name)</div>
+        <div class="error-cause">Git ne connaît pas ton identité, la configuration n'a pas été faite.</div>
+        <div class="error-fix">
+          <span class="fix-label">Solution :</span>
+          <span class="cmd">git config --global user.name "Nom"</span> et <span class="cmd">git config --global user.email "email"</span>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-msg">fatal: not a git repository</div>
+        <div class="error-cause">Tu n'es pas dans un dossier initialisé avec Git.</div>
+        <div class="error-fix">
+          <span class="fix-label">Solution :</span>
+          Vérifie ton dossier avec <span class="cmd">ls</span>, puis fais <span class="cmd">git init</span> ou <span class="cmd">cd</span> dans le bon dossier.
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-msg">CONFLICT (content): Merge conflict in fichier.txt</div>
+        <div class="error-cause">Deux personnes ont modifié la même ligne dans un fichier.</div>
+        <div class="error-fix">
+          <span class="fix-label">Solution :</span>
+          Ouvre le fichier, supprime les balises <span class="cmd">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> et <span class="cmd">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>, corrige le contenu, puis <span class="cmd">git add .</span> et <span class="cmd">git commit</span>.
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-msg">fatal: 'origin' does not appear to be a git repository</div>
+        <div class="error-cause">Le dépôt distant "origin" n'est pas encore configuré.</div>
+        <div class="error-fix">
+          <span class="fix-label">Solution :</span>
+          <span class="cmd">git remote add origin https://...</span>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-msg">nothing to commit, working tree clean</div>
+        <div class="error-cause">Aucun fichier modifié détecté — ce n'est pas vraiment une erreur !</div>
+        <div class="error-fix">
+          <span class="fix-label">Info :</span>
+          Vérifie que tu as bien sauvegardé tes fichiers dans ton éditeur avant de faire <span class="cmd">git add .</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       WORKFLOW
+  ======================================================= -->
+  <div class="workflow">
+    <h3>🔄 Workflow classique — à répéter à chaque modification</h3>
+    <div class="workflow-steps">
+      <span class="step">git add .</span>
+      <span class="arrow">→</span>
+      <span class="step">git commit -m "..."</span>
+      <span class="arrow">→</span>
+      <span class="step">git push</span>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       WORKFLOW MISE EN LIGNE
+  ======================================================= -->
+  <div class="workflow workflow-deploy">
+    <h3>🚀 Mettre à jour la page en ligne — après chaque modification</h3>
+    <div class="workflow-steps">
+      <span class="step">Modifier index.html / style.css</span>
+      <span class="arrow">→</span>
+      <span class="step">git add .</span>
+      <span class="arrow">→</span>
+      <span class="step">git commit -m "..."</span>
+      <span class="arrow">→</span>
+      <span class="step">git push</span>
+      <span class="arrow">→</span>
+      <span class="step">Attendre ~1 minute ✅</span>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       FOOTER 
+  ======================================================= -->
+  <div class="footer">
+    Mémo créé le 13/04/2026 par Enzo LETHIAIS — BTS CIEL 1ère année<br>
+    <u> Version : 3.0.0 </u>
+  </div>
+
+</div>
+
+<script data-goatcounter="https://aidegitbash.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
