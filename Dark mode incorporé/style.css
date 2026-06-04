@@ -73,6 +73,21 @@ body.dark .workflow-deploy .arrow { color: #3b82f6; }
 }
 .dark-toggle:hover { background: #334155; }
 
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dark-toggle {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.75rem;
+  }
+}
+
 /* ---- RESET DE BASE --------------------------------------- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -359,16 +374,3 @@ body {
   color: var(--accent);
 }
 
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .dark-toggle {
-    margin-left: 0;
-    width: 100%;
-    justify-content: center;
-    margin-top: 0.75rem;
-  }
-}
