@@ -249,6 +249,14 @@ body {
   gap: 6px;
 }
 
+.workflow-tip {
+  font-size: 0.82rem;
+  color: var(--green-text);
+  margin-top: 0.875rem;
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+
 /* Étapes du workflow en ligne */
 .workflow-steps {
   display: flex;
