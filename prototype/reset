@@ -1,0 +1,138 @@
+[33mcommit 9b3cd8ed9adb1d2843003fc90b887423c064e2e7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Thu Jun 4 10:44:35 2026 +0200
+
+    correction bouton dark
+
+[33mcommit c79e52dc80a28e5f878c2436b9d3ba92ad672f4b[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Thu Jun 4 10:42:31 2026 +0200
+
+     correction bouton Darkmode
+
+[33mcommit 705ae4f0f8efd03562ced5e1f00c9fb96c9505cf[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Thu Jun 4 10:26:46 2026 +0200
+
+    correction bug
+
+[33mcommit e417e3c81c212b4ae3d0c4483e3a94f589013404[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Thu Jun 4 10:17:46 2026 +0200
+
+     Ajout du Dar mode et correction du bug d'affichage
+
+[33mcommit 91e950fde578dc206dc234263f744525117694ae[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Thu Jun 4 09:46:57 2026 +0200
+
+     Ajout du Dark mode
+
+[33mcommit 69a18cb2c50f16a267dbb85681454c7325b74995[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Wed Jun 3 13:53:00 2026 +0200
+
+     arriver version 3.0.0
+
+[33mcommit daae978510d24b0a016be45695512f890c60df81[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Wed Jun 3 13:37:32 2026 +0200
+
+     version 2.1.5
+
+[33mcommit af927471712d38d00a71cf16eab5a983334f0f12[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Wed Jun 3 13:31:26 2026 +0200
+
+    version 2.1.5
+
+[33mcommit e303e45717f2bbe1eaf428e9db9750255653d987[m[33m ([m[1;32mperso[m[33m)[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Wed Jun 3 13:19:08 2026 +0200
+
+    version 2.1.4
+
+[33mcommit 7bde097b69be3ca1548b6ef72851d184076a7e42[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Wed Jun 3 13:17:00 2026 +0200
+
+     version 2.1.4
+
+[33mcommit 3fddf93193ad99ca4789f2a3422c14e648aef212[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Wed Jun 3 13:07:31 2026 +0200
+
+    version 2.0.4
+
+[33mcommit 8f062a1ddc3dca148c9c6ec85b1332cb2ef13420[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Tue Jun 2 10:26:14 2026 +0200
+
+     changement de vesion
+
+[33mcommit 650c7af3a4fa8c1c772dc4646972f0dfa6dbb623[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 16:13:08 2026 +0200
+
+     Passage à la version 1.09.10
+
+[33mcommit 14a04723849ccfca2e2096c2e4a415489fba7bfe[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 16:07:12 2026 +0200
+
+     ajout de la version
+
+[33mcommit 145477c100d6bd1823b46eb89cf98df163e83d3a[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 15:59:46 2026 +0200
+
+     Suppréssion du titre en trop 2
+
+[33mcommit 5a2a05cf51a8e0ac57dfecd788ad9645cc662ca0[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 15:50:40 2026 +0200
+
+     Suppréssion du titre en trop
+
+[33mcommit 912c00a24475532915efb4608b5029bb658ea5f8[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 15:47:34 2026 +0200
+
+     Ajout du workflow mise en ligne
+
+[33mcommit 301d504cd5d7f96c7e5fab3b32534bdde0941a4b[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 15:33:25 2026 +0200
+
+     éssai de versionning
+
+[33mcommit febb58f4db7f7971da0a35aa5adf7457cbb692a5[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 15:02:21 2026 +0200
+
+     ajout de nouvelles cartes et une section pour les erreurs fréquentes
+
+[33mcommit 6a888161712ed3e5d3dfa0fc9834d84f3af960c0[m
+Merge: 43f4910 b6bb5b0
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 13:20:06 2026 +0200
+
+    Merge branch 'main' of https://github.com/salutoi3008/Aide_Gitbash
+
+[33mcommit 43f491019b2ee540429fbb9798a518444e1829ea[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 13:18:57 2026 +0200
+
+    ajout
+
+[33mcommit b6bb5b07b5f04a08a0aa184efd0d925980ea5ad8[m
+Author: Enzo <lethiaisenzo@gmail.com>
+Date:   Mon Jun 1 12:10:14 2026 +0200
+
+    Add usage help for GitBash in README
+
+[33mcommit 2af839d273a7505acb6d6770df12e0b9ac060187[m
+Author: Enzo LETHIAIS <EL@bbsa.fr>
+Date:   Mon Jun 1 12:06:40 2026 +0200
+
+    Ajout du mémo pour GitBash
