@@ -296,7 +296,36 @@
     </div>
 
 
-    <!-- CARTE 11 : Voir les différences -->
+    <!-- Carte 11 : Annuler les modification -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-icon red">↩️</div>
+    <h2>Annuler des modifications</h2>
+  </div>
+
+  <div class="cmd-row">
+    <span class="cmd">git reset fichier.js</span>
+    <div class="desc">Désindexer un fichier ajouté par erreur avec git add (le fichier reste modifié)</div>
+  </div>
+
+  <div class="cmd-row">
+    <span class="cmd">git reset HEAD~1</span>
+    <div class="desc">Annuler le dernier commit — les modifications restent dans tes fichiers mais sortent du staging</div>
+  </div>
+
+  <div class="cmd-row">
+    <span class="cmd">git reset --soft HEAD~1</span>
+    <div class="desc">Annuler le dernier commit — les modifications restent dans le staging (prêtes à re-commiter)</div>
+  </div>
+
+  <div class="cmd-row">
+   <span class="cmd">git reset --hard HEAD~1</span>
+    <div class="desc">⚠️ Annuler le dernier commit ET effacer définitivement toutes les modifications — irréversible</div>
+  </div>
+</div>
+
+
+    <!-- CARTE 12 : Voir les différences -->
     <div class="card">
       <div class="card-header">
         <div class="card-icon green">🔍</div>
@@ -325,7 +354,7 @@
     </div>
 
 
-    <!-- CARTE 12 : Changer de branche -->
+    <!-- CARTE 13 : Changer de branche -->
     <div class="card">
       <div class="card-header">
         <div class="card-icon purple">🌿</div>
@@ -476,7 +505,7 @@
   ======================================================= -->
   <div class="footer">
     Mémo créé le 13/04/2026 par Enzo LETHIAIS — BTS CIEL 1ère année<br>
-    <u> Version : 3.3.2 </u> <span> - (datant du 05/06/2026)</span>
+    <u> Version : 3.4.2 </u> <span> - (datant du 07/09/2026)</span>
   </div>
 
 </div>
