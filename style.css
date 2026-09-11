@@ -382,3 +382,7 @@ body {
   color: var(--accent);
 }
 
+.workflow-deploy .workflow-tip {
+  color: var(--accent-text);
+}
+
