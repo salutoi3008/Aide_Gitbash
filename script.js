@@ -1,6 +1,6 @@
 /* ============================================================
-   MÉMO GIT — script.js
-   Gestion du mode sombre
+                  MÉMO GIT — script.js
+                 Gestion du mode sombre
    ============================================================ */
 
 const btn = document.getElementById('darkToggle');
@@ -16,3 +16,20 @@ if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');
   btn.textContent = '☀️ Mode clair';
 }
+
+/* ================
+     Bouton copier
+==================*/
+
+document.querySelectorAll('.cmd').forEach(cmd => {
+  const btn = document.createElement('button');
+  btn.className = 'copy-btn';
+  btn.textContent = '📋 Copier';
+  btn.addEventListener('click', () => {
+    navigator.clipboard.writeText(cmd.textContent.trim());
+    btn.textContent = '✅ Copié';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '📋 Copier'; btn.classList.remove('copied'); }, 1500);
+  });
+  cmd.after(btn);
+});
