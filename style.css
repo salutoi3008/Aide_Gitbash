@@ -355,6 +355,25 @@ body {
   margin-right: 4px;
 }
 
+
+/*---Bouton copier------*/
+
+.cmd-wrap { position: relative; display: inline-block;}
+.copy-btn {
+  margin-left: 6px;
+  padding: 2px 7px;
+  font-size: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+  vertical-align: middle;
+}
+.copy-btn:hover { color: var(--accent-text); border-color: var(--accent-text); }
+.copy-btn.copied { color: var(--green); border-color: var(--green); }
+
+
 /* ---- FOOTER ---------------------------------------------- */
 .footer {
   text-align: center;
