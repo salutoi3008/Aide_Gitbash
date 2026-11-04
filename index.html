@@ -401,11 +401,13 @@
     <div class="errors-grid">
 
       <div class="error-card">
-        <div class="error-msg">error: failed to push some refs to '...'</div>
-        <div class="error-cause">Le dépôt distant a des commits que tu n'as pas en local.</div>
+        <div class="error-msg">! [rejected] main -> main (fetch first)<br>error: failed to push some refs to '...'</div>
+        <div class="error-cause">Le dépôt distant a des commits que tu n'as pas en local (par exemple un fichier modifié directement sur GitHub). Git refuse d'écraser cet historique.</div>
         <div class="error-fix">
           <span class="fix-label">Solution :</span>
-          <span class="cmd">git pull</span> puis <span class="cmd">git push</span>
+          <span class="cmd">git pull</span> puis <span class="cmd">git push</span><br>
+          Variante avec un historique plus propre : <span class="cmd">git pull --rebase</span> puis <span class="cmd">git push</span><br>
+          Si un éditeur (Vim) s'ouvre pendant le pull : tape <span class="cmd">:wq</span> puis Entrée.
         </div>
       </div>
 
@@ -454,6 +456,20 @@
         </div>
       </div>
 
+
+      <div class="error-card">
+        <div class="error-msg">! [rejected]        main -> main (fetch first)
+          error: failed to push some refs to 'https://github.com/......./......'
+          </div>
+        <div class="error-cause">La branche locale main n'est pas encore liée à une branche distante et le dépôt github
+          contient des commits qui n'ont pas été fait en local
+        </div>
+        <div class="error-fix">
+          <span class="fix-label">Solution :</span>
+          <span class="cmd"> git pull --rebase origin main </span> qui récupère les commits distants et place les commits locaux par dessus puis   <span class="cmd"> git push -u origin main </span> Qui va pousser et lier la branche ce qui permettra pour les prochains envois d'utiliser uniquement   <span class="cmd"> git push </span>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -494,7 +510,7 @@
   ======================================================= -->
   <div class="footer">
     Mémo créé le 13/04/2026 par Enzo LETHIAIS — BTS CIEL 1ère année<br>
-    <u> Version : 3.5.5 </u> <span> - (datant du 19/09/2026)</span>
+    <u> Version : 3.5.7 </u> <span> - (datant du 04/11/2026)</span>
   </div>
 
 </div>
